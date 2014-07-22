@@ -18,12 +18,12 @@ Hardware
 
 The hardware is just a couple of 10k resistors from the two I2C lines to vcc and 4 wires:
 
-Governor    <->  ESC
+Governor  <->  ESC
 
-* GND              GND (1)
-* VCC              VCC (2)
-* SDA (2)          SDA (5)
-* SCL (3)          SCL (6)
+* GND     <->  GND (1)
+* VCC     <->  VCC (2)
+* SDA (2) <->  SDA (5)
+* SCL (3) <->  SCL (6)
 
 The ESC has the connections labeled on the through-hole pads, the numbers refer to the hole-position, counting
 from the power-in side of the board.
