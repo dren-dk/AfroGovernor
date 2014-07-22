@@ -1,0 +1,6 @@
+# These are the commands I used to get a brand new ATmega8 flashed with
+# the proper fuses and bootloader, the first line flashes the fuses,
+# the last one flashes the firmware as well as the bootloader.
+
+avrdude -c usbtiny -p m8 -U lfuse:w:0x8e:m -U hfuse:w:0xd2:m 
+avrdude -c usbtiny -p m8 -U flash:w:tgy/afro_nfet.hex
